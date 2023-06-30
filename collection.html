@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My Collection</title>
+	<link rel="stylesheet" href="fontawesome/css/all.min.css"> <!-- https://fontawesome.com/ -->
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> <!-- https://fonts.google.com/ -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/templatemo-xtra-blog.css" rel="stylesheet">
+    <style>
+        /* CSS cho hình ảnh phóng to */
+.img-zoom {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.img-zoom img {
+  max-width: 80%;
+  max-height: 80%;
+  object-fit: contain;
+}
+
+
+    </style>
+<!--
+    
+TemplateMo 553 Xtra Blog
+
+https://templatemo.com/tm-553-xtra-blog
+
+-->
+</head>
+<body>
+	<header class="tm-header" id="tm-header">
+        <div class="tm-header-wrapper">
+            <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="tm-site-header">
+                <div class="mb-3 mx-auto tm-site-logo"> <img style="opacity: 1;" src="img/logo.png" alt="Image" class="img-fluid"></div>            
+                <h1 class="text-center">Hữu Bằng</h1>
+            </div>
+            <nav class="tm-nav" id="tm-nav">            
+                <ul>
+                    <li class="tm-nav-item active"><a href="index.html" class="tm-nav-link">
+                        <i class="fas fa-home"></i>
+                        Blog Home
+                    </a></li>
+                <!--   <li class="tm-nav-item"><a href="post.html" class="tm-nav-link">
+                        <i class="fas fa-pen"></i>
+                        Single Post
+                    </a></li>--> 
+                    <li class="tm-nav-item"><a href="https://github.com/BangNGH" class="tm-nav-link">
+                        <i class="fas fa-users"></i>
+                        About me
+                    </a></li>
+                    <li class="tm-nav-item"><a href="https://bangngh.github.io/my_profile/" class="tm-nav-link">
+                        <i class="far fa-comments"></i>
+                        Contact me
+                    </a></li>
+                </ul>
+            </nav>
+           
+        </div>
+    </header>
+    <div class="container-fluid">
+        <main class="tm-main">
+                     <!-- Search form 
+            <div class="row tm-row">
+                <div class="col-12">
+                    <form method="GET" class="form-inline tm-mb-80 tm-search-form">                
+                        <input class="form-control tm-search-input" name="query" type="text" placeholder="Search..." aria-label="Search">
+                        <button class="tm-search-button" type="submit">
+                            <i class="fas fa-search tm-search-icon" aria-hidden="true"></i>
+                        </button>                                
+                    </form>
+                </div>                
+            </div>            -->
+            <div class="row tm-row">
+                <div class="col-12">
+                  <hr class="tm-hr-primary tm-mb-55">
+                  <!-- Video player 3840 x 2160 -->
+                  <video width="3840" height="2160" controls class="tm-mb-40" autoplay loop>
+                    <source src="video/welcome.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+              </div>
+              
+            <div class="row tm-row">
+        
+                <article class="col-12 col-md-6 tm-post">
+                    <hr class="tm-hr-primary">
+                    <a href="img/3.jpg" class="effect-lily tm-post-link tm-pt-20">
+                      <div class="tm-post-link-inner">
+                        <img style="opacity: 1;" src="img/3.jpg" alt="Image" class="img-fluid">
+                      </div>
+                    </a>
+                    <div class="d-flex justify-content-between">
+                      <span> </span>
+                      <span>by Huu Bang</span>
+                    </div>
+                  </article>
+
+                  <article class="col-12 col-md-6 tm-post">
+                    <hr class="tm-hr-primary">
+                    <a href="img/3.jpg" class="effect-lily tm-post-link tm-pt-20">
+                      <div class="tm-post-link-inner">
+                        <img style="opacity: 1;" src="img/2.jpeg" alt="Image" class="img-fluid">
+                      </div>
+                    </a>
+                    <div class="d-flex justify-content-between">
+                      <span> </span>
+                      <span>Collection</span>
+                    </div>
+                  </article>
+
+                  <article class="col-12 col-md-6 tm-post">
+                    <hr class="tm-hr-primary">
+                    <a href="img/3.jpg" class="effect-lily tm-post-link tm-pt-20">
+                      <div class="tm-post-link-inner">
+                        <img style="opacity: 1;" src="img/1.jpeg" alt="Image" class="img-fluid">
+                      </div>
+                    </a>
+                    <div class="d-flex justify-content-between">
+                      <span> </span>
+                      <span>Collection</span>
+                    </div>
+                  </article>
+
+                  <article class="col-12 col-md-6 tm-post">
+                    <hr class="tm-hr-primary">
+                    <a href="img/3.jpg" class="effect-lily tm-post-link tm-pt-20">
+                      <div class="tm-post-link-inner">
+                        <img style="opacity: 1;" src="img/13.jpg" alt="Image" class="img-fluid">
+                      </div>
+                    </a>
+                    <div class="d-flex justify-content-between">
+                      <span> </span>
+                      <span>by Huu Bang</span>
+                    </div>
+                  </article>
+        
+                
+
+                  <article class="col-12 col-md-6 tm-post">
+                    <hr class="tm-hr-primary">
+                    <a href="img/3.jpg" class="effect-lily tm-post-link tm-pt-20">
+                      <div class="tm-post-link-inner">
+                        <img style="opacity: 1;" src="img/4.jpeg" alt="Image" class="img-fluid">
+                      </div>
+                    </a>
+                    <div class="d-flex justify-content-between">
+                      <span> </span>
+                      <span>Collection</span>
+                    </div>
+                  </article>
+                  <article class="col-12 col-md-6 tm-post">
+                    <hr class="tm-hr-primary">
+                    <a href="img/3.jpg" class="effect-lily tm-post-link tm-pt-20">
+                      <div class="tm-post-link-inner">
+                        <img style="opacity: 1;" src="img/13.jpeg" alt="Image" class="img-fluid">
+                      </div>
+                    </a>
+                    <div class="d-flex justify-content-between">
+                      <span> </span>
+                      <span>Collection</span>
+                    </div>
+                  </article>
+                  <article class="col-12 col-md-6 tm-post">
+                    <hr class="tm-hr-primary">
+                    <a href="img/3.jpg" class="effect-lily tm-post-link tm-pt-20">
+                      <div class="tm-post-link-inner">
+                        <img style="opacity: 1;" src="img/5.jpg" alt="Image" class="img-fluid">
+                      </div>
+                    </a>
+                    <div class="d-flex justify-content-between">
+                      <span> </span>
+                      <span>Collection</span>
+                    </div>
+                  </article>
+                  
+                  <article class="col-12 col-md-6 tm-post">
+                    <hr class="tm-hr-primary">
+                    <a href="img/3.jpg" class="effect-lily tm-post-link tm-pt-20">
+                      <div class="tm-post-link-inner">
+                        <img style="opacity: 1;" src="img/6.jpg" alt="Image" class="img-fluid">
+                      </div>
+                    </a>
+                    <div class="d-flex justify-content-between">
+                      <span> </span>
+                      <span>Collection</span>
+                    </div>
+                  </article>
+
+                  <div class="row tm-row">
+                    <div class="col-12">
+                      <hr class="tm-hr-primary tm-mb-55">
+                      <!-- Video player 3840 x 2160 -->
+                      <video width="3840" height="2160" controls class="tm-mb-40">
+                        <source src="video/chillvibe.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                  </div>
+
+
+               
+
+                  
+                  <article class="col-12 col-md-6 tm-post">
+                    <hr class="tm-hr-primary">
+                    <a href="img/3.jpg" class="effect-lily tm-post-link tm-pt-20">
+                      <div class="tm-post-link-inner">
+                        <img style="opacity: 1;" src="img/7.jpg" alt="Image" class="img-fluid">
+                      </div>
+                    </a>
+                    <div class="d-flex justify-content-between">
+                      <span> </span>
+                      <span>Collection</span>
+                    </div>
+                  </article>
+
+                  
+                  <article class="col-12 col-md-6 tm-post">
+                    <hr class="tm-hr-primary">
+                    <a href="img/3.jpg" class="effect-lily tm-post-link tm-pt-20">
+                      <div class="tm-post-link-inner">
+                        <img style="opacity: 1;" src="img/8.jpg" alt="Image" class="img-fluid">
+                      </div>
+                    </a>
+                    <div class="d-flex justify-content-between">
+                      <span> </span>
+                      <span>Collection</span>
+                    </div>
+                  </article>
+
+                  
+                  <article class="col-12 col-md-6 tm-post">
+                    <hr class="tm-hr-primary">
+                    <a href="img/3.jpg" class="effect-lily tm-post-link tm-pt-20">
+                      <div class="tm-post-link-inner">
+                        <img style="opacity: 1;" src="img/9.jpg" alt="Image" class="img-fluid">
+                      </div>
+                    </a>
+                    <div class="d-flex justify-content-between">
+                      <span> </span>
+                      <span>Collection</span>
+                    </div>
+                  </article>
+
+                  
+                  <article class="col-12 col-md-6 tm-post">
+                    <hr class="tm-hr-primary">
+                    <a href="img/3.jpg" class="effect-lily tm-post-link tm-pt-20">
+                      <div class="tm-post-link-inner">
+                        <img style="opacity: 1;" src="img/10.jpg" alt="Image" class="img-fluid">
+                      </div>
+                    </a>
+                    <div class="d-flex justify-content-between">
+                      <span> </span>
+                      <span>Collection</span>
+                    </div>
+                  </article>
+
+                  <article class="col-12 col-md-6 tm-post">
+                    <hr class="tm-hr-primary">
+                    <a href="img/3.jpg" class="effect-lily tm-post-link tm-pt-20">
+                      <div class="tm-post-link-inner">
+                        <img style="opacity: 1;" src="img/11.jpg" alt="Image" class="img-fluid">
+                      </div>
+                    </a>
+                    <div class="d-flex justify-content-between">
+                      <span> </span>
+                      <span>Collection</span>
+                    </div>
+                  </article>
+
+                  <article class="col-12 col-md-6 tm-post">
+                    <hr class="tm-hr-primary">
+                    <a href="img/3.jpg" class="effect-lily tm-post-link tm-pt-20">
+                      <div class="tm-post-link-inner">
+                        <img style="opacity: 1;" src="img/12.jpg" alt="Image" class="img-fluid">
+                      </div>
+                    </a>
+                    <div class="d-flex justify-content-between">
+                      <span> </span>
+                      <span>Collection</span>
+                    </div>
+                  </article>
+
+                  <article class="col-12 col-md-6 tm-post">
+                    <hr class="tm-hr-primary">
+                    <a href="img/3.jpg" class="effect-lily tm-post-link tm-pt-20">
+                      <div class="tm-post-link-inner">
+                        <img style="opacity: 1;" src="img/16.png" alt="Image" class="img-fluid">
+                      </div>
+                    </a>
+                    <div class="d-flex justify-content-between">
+                      <span> </span>
+                      <span>Collection</span>
+                    </div>
+                  </article>
+
+                  <article class="col-12 col-md-6 tm-post">
+                    <hr class="tm-hr-primary">
+                    <a href="img/3.jpg" class="effect-lily tm-post-link tm-pt-20">
+                      <div class="tm-post-link-inner">
+                        <img style="opacity: 1;" src="img/15.png" alt="Image" class="img-fluid">
+                      </div>
+                    </a>
+                    <div class="d-flex justify-content-between">
+                      <span> </span>
+                      <span>Collection</span>
+                    </div>
+                  </article>
+
+                  <article class="col-12 col-md-6 tm-post">
+                    <hr class="tm-hr-primary">
+                    <a href="img/3.jpg" class="effect-lily tm-post-link tm-pt-20">
+                      <div class="tm-post-link-inner">
+                        <img style="opacity: 1;" src="img/17.png" alt="Image" class="img-fluid">
+                      </div>
+                    </a>
+                    <div class="d-flex justify-content-between">
+                      <span> </span>
+                      <span>Collection</span>
+                    </div>
+                  </article>
+
+                  <article class="col-12 col-md-6 tm-post">
+                    <hr class="tm-hr-primary">
+                    <a href="img/3.jpg" class="effect-lily tm-post-link tm-pt-20">
+                      <div class="tm-post-link-inner">
+                        <img style="opacity: 1;" src="img/18.png" alt="Image" class="img-fluid">
+                      </div>
+                    </a>
+                    <div class="d-flex justify-content-between">
+                      <span> </span>
+                      <span>Collection</span>
+                    </div>
+                  </article>
+            </div>
+
+
+            <footer class="row tm-row">
+                <div class="col-md-6 col-12 tm-color-gray">
+                    Design: <a rel="nofollow" target="_parent" href="https://templatemo.com" class="tm-external-link">Huu Bang</a>
+                </div>
+                <div class="col-md-6 col-12 tm-color-gray tm-copyright">
+                    Copyright 2023 @ huu bang.
+                </div>
+            </footer>
+        </main>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/templatemo-script.js"></script>
+    <script>
+        // JavaScript để phóng to hình ảnh
+document.addEventListener('DOMContentLoaded', function() {
+  const postLinks = document.querySelectorAll('.tm-post-link');
+
+  // Lặp qua từng thẻ <a> trong .tm-post-link
+  postLinks.forEach(function(postLink) {
+    postLink.addEventListener('click', function(e) {
+      e.preventDefault();
+      
+      // Tạo phần tử div cho hình ảnh phóng to
+      const imgZoom = document.createElement('div');
+      imgZoom.classList.add('img-zoom');
+
+      // Tạo phần tử img trong div img-zoom
+      const img = document.createElement('img');
+      img.src = postLink.querySelector('img').src;
+
+      // Thêm img vào imgZoom
+      imgZoom.appendChild(img);
+
+      // Thêm imgZoom vào body
+      document.body.appendChild(imgZoom);
+
+      // Xử lý sự kiện click để đóng hình ảnh phóng to
+      imgZoom.addEventListener('click', function() {
+        document.body.removeChild(imgZoom);
+      });
+    });
+  });
+});
+
+    </script>
+</body>
+</html>

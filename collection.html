@@ -941,10 +941,12 @@
     // Hàm kiểm tra xem hình ảnh có nằm trong tầm nhìn của người dùng hay không
     function checkImageInView() {
         const margin = 100;
+        const viewportHeight = window.innerHeight;
+        const reducedViewportHeight = viewportHeight - 100;
         lazyImages.forEach(function(image) {
             const rect = image.getBoundingClientRect();
             const viewportHeight = window.innerHeight;
-            if (rect.top >= -viewportHeight && rect.bottom <= viewportHeight * 2) {
+            if (rect.top >= -viewportHeight && rect.bottom <= reducedViewportHeight) {
 
                 if (!image.getAttribute('src')) {
                     image.src = image.getAttribute('data-src');

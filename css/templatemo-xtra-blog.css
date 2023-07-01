@@ -215,8 +215,8 @@ ul {
 	opacity: 0.7;
 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
 	transition: opacity 0.35s, transform 0.35s;
-	-webkit-transform: translate3d(-40px,0, 0);
-	transform: translate3d(-40px,0,0);
+	-webkit-transform: translate3d(-5px,0, 0);
+	transform: translate3d(-10px,0,0);
 }
 
 .effect-lily:hover img { opacity: 1; }

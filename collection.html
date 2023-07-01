@@ -953,12 +953,30 @@
         const margin = 100;
         const viewportHeight = window.innerHeight;
         const reducedViewportHeight = viewportHeight - 100;
+
         lazyImages.forEach(function (image) {
             const rect = image.getBoundingClientRect();
-            const viewportHeight = window.innerHeight;
-            if (rect.top >= -viewportHeight && rect.bottom <= reducedViewportHeight) {
 
+            if (rect.top >= -viewportHeight && rect.bottom <= reducedViewportHeight) {
                 if (!image.getAttribute('src')) {
+                    // Hiển thị hình ảnh loading
+                    const loadingImage = document.createElement('img');
+                    loadingImage.src = 'img/loading.png'; // Đường dẫn đến hình ảnh loading
+                    image.parentNode.insertBefore(loadingImage, image);
+
+                    // Ẩn hình ảnh thật
+                    image.style.display = 'none';
+
+                    // Tải hình ảnh thật
+                    image.onload = function () {
+                        // Ẩn hình ảnh loading
+                        loadingImage.style.display = 'none';
+
+                        // Hiển thị hình ảnh thật
+                        image.style.display = 'block';
+                    };
+
+                    // Đặt src của hình ảnh để tải hình ảnh thật
                     image.src = image.getAttribute('data-src');
                     image.removeAttribute('data-src');
                 }
@@ -970,5 +988,6 @@
     window.addEventListener('DOMContentLoaded', checkImageInView);
     window.addEventListener('scroll', checkImageInView);
 </script>
+
 </body>
 </html>

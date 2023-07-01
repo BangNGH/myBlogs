@@ -949,15 +949,16 @@
     const lazyImages = document.querySelectorAll('img[data-src]');
 
     // Hàm kiểm tra xem hình ảnh có nằm trong tầm nhìn của người dùng hay không
+
     function checkImageInView() {
         const margin = 100;
         const viewportHeight = window.innerHeight;
         const reducedViewportHeight = viewportHeight - 100;
-
         lazyImages.forEach(function (image) {
             const rect = image.getBoundingClientRect();
-
+            const viewportHeight = window.innerHeight;
             if (rect.top >= -viewportHeight && rect.bottom <= reducedViewportHeight) {
+
                 if (!image.getAttribute('src')) {
                     // Hiển thị hình ảnh loading
                     const loadingImage = document.createElement('img');
@@ -974,6 +975,9 @@
 
                         // Hiển thị hình ảnh thật
                         image.style.display = 'block';
+
+                        // Loại bỏ hình ảnh loading
+                        loadingImage.parentNode.removeChild(loadingImage);
                     };
 
                     // Đặt src của hình ảnh để tải hình ảnh thật
@@ -983,6 +987,7 @@
             }
         });
     }
+
 
     // Gọi hàm checkImageInView khi trang được tải và khi người dùng cuộn trang
     window.addEventListener('DOMContentLoaded', checkImageInView);
